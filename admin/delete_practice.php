@@ -19,6 +19,18 @@ if ($conn->connect_error) {
 $sql = "SELECT * FROM Practice";
 $result = $conn->query($sql);
 
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_practice"])) {
+    $sql_delete = "DELETE FROM Practice";
+    if ($conn->query($sql_delete) === TRUE) {
+        echo "<script>
+        alert('Все данные о практиках успешно удалены.');
+        window.location.reload();
+        </script>";
+    } else {
+        echo "<script>alert('Ошибка при удалении данных: " . $conn->error . "');</script>";
+    }
+}
+
 // Закрываем соединение с базой данных
 $conn->close();
 ?>
@@ -110,6 +122,9 @@ $conn->close();
                 ?>
             </tbody>
         </table>
+        <form method="POST" onsubmit="return confirm('Вы уверены, что хотите удалить эту практику?');">
+            <button type="submit" name="delete_practice" class="btn btn-danger">Удалить все данные</button>
+        </form>
         <a href="index.php" class="btn btn-secondary">Назад к панели управления</a>
     </div>
 </body>
