@@ -58,15 +58,6 @@ CREATE TABLE `Practice` (
 -- Дамп данных таблицы `Practice`
 --
 
-INSERT INTO `Practice` (`practice_id`, `year`, `student_id`, `practice_date`, `practice_period`, `name`, `practice_address`, `practice_type_id`, `practice_place_id`, `order_number_and_date`, `institute`, `paid_practice`, `grade`, `handling_difficulties`, `remarks`, `course`, `group_name`, `supervisor_name`, `supervisor_position`, `contract_type`, `ysu_practice_supervisor`, `organization_practice_supervisor`, `city`, `reason`) VALUES
-(1, 2024, NULL, NULL, 'с июня по дк ', 'югу', NULL, NULL, NULL, '1 от 02', 'аыв', 0, NULL, NULL, NULL, '2 ', '312', 'ааыв', 'авы', 'аыв', 'авы', 'аыв', NULL, NULL),
-(2, 2024, NULL, NULL, 'с алвы', 'выф', NULL, NULL, NULL, '3214 от 421', 'авы', 0, NULL, NULL, NULL, '321', '321', 'авы', 'аыв', 'производственная практика', 'авы', 'авы', NULL, NULL),
-(3, 2024, NULL, NULL, 'с июня по дко', 'уцф', NULL, NULL, NULL, '213423', 'авы', 0, NULL, NULL, NULL, '431', '3112', 'аыв', 'аыв', 'преддипломная практика', 'кцу', 'авы', NULL, NULL),
-(4, 2024, NULL, NULL, 'с июня', 'а', NULL, NULL, NULL, '321', 'выа', 1, NULL, NULL, NULL, '321', '213', 'пва', 'аыв', 'учебная практика', 'аыв', 'ываыв', NULL, NULL),
-(5, 2024, NULL, NULL, 'с 23.04.2023', 'югу', NULL, NULL, NULL, '2 от 02.05.2023', 'ищцт', 0, NULL, NULL, NULL, '2', '112', 'Змеев', 'доцент', 'преддипломная практика', 'Самарин', 'Змеев', NULL, NULL);
-
--- --------------------------------------------------------
-
 --
 -- Структура таблицы `PracticeAdmin`
 --
@@ -124,14 +115,6 @@ CREATE TABLE `Students` (
 --
 -- Дамп данных таблицы `Students`
 --
-
-INSERT INTO `Students` (`id`, `student_name`, `grade`) VALUES
-(1, '1', '1.0'),
-(2, '1', '1.0'),
-(3, '1', '4.6'),
-(4, 'Петров', '3.0'),
-(5, '2', '5.0'),
-(6, '4', '4.0');
 
 -- --------------------------------------------------------
 
